@@ -1,0 +1,4 @@
+This is a collection of javascript files used to teach about blockchain.
+We are not using a real p2p network to simulate the nodes. Instead, we are 
+broadcasting through a database for the purposes of teaching younger students 
+that have difficulty grasping p2p concepts
