@@ -12,7 +12,14 @@ const db = firebase.database();
 
 //const username = "Chris";
 const username = prompt("What's your name?");
+uhash = StringToHash(username);
+console.log(uhash);
 
+
+
+function StringToHash (s){
+  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+}
 
 document.getElementById("send-message").addEventListener("submit", postChat);
 function postChat(e) {
